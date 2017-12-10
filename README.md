@@ -8,9 +8,9 @@
 
 ### การติดตั้ง
 
-1.[ดาวโหลดไฟล์เวอร์ชั่นล่าสุด](https://github.com/aotlunla/BitfinexLendingBot-TH/archive/master.zip)
-2.อัพโหลดและ unzip ไฟล์ที่ดาวน์โหลดไปที่เซิฟเวอร์หรือโฮสติ้งของคุณในหน้า Directory ที่ต้องการ (แนะนำให้ใช้ root directory ของโฮสติ้ง) (PHP 5.6 Recommend)
-3.เมื่อเข้าสู่เว็บไซต์ระบบจำทำการ redirect ไปที่ "http://yoursite.domain/install.php" จากนั้นให้ทำการติ้ดตั้งตามขั้นตอน
+* 1.[ดาวโหลดไฟล์เวอร์ชั่นล่าสุด](https://github.com/aotlunla/BitfinexLendingBot-TH/archive/master.zip)
+* 2.อัพโหลดและ unzip ไฟล์ที่ดาวน์โหลดไปที่เซิฟเวอร์หรือโฮสติ้งของคุณในหน้า Directory ที่ต้องการ (แนะนำให้ใช้ root directory ของโฮสติ้ง) (PHP 5.6 Recommend)
+* 3.เมื่อเข้าสู่เว็บไซต์ระบบจำทำการ redirect ไปที่ "http://yoursite.domain/install.php" จากนั้นให้ทำการติ้ดตั้งตามขั้นตอน
 
 
 
@@ -18,10 +18,10 @@
 
 **สำคัญ**  - ให้ทำการ Backup ไฟล์ inc/config.php ก่อนทุกครั้งก่อนอัพเดต!!
 
-1.เพื่ออัพเดตระบบให้ท่านดาวน์โหลดไฟล์เวอร์ชั่นล่าสุดได้ที่ [ดาวโหลดไฟล์เวอร์ชั่นล่าสุด](https://github.com/aotlunla/BitfinexLendingBot-TH/archive/master.zip).
-2.ทำการอัพเดตโหลดไฟล์ทั้งหมดไปที่ directory ของท่านโดยเขียนไฟล์ทับทั้งหมด
-3.ให้ทำการอัพโหลดไฟล์ config.php ที่ Backup ไว้เขียนทับไฟล์ที่อัพเดตใหม่
-4.เมื่อเข้าสู่หน้าเว็บไซต์ระบบจะเรียกท่านไปที่  http://yoursite.domain/update.php โดยอัตโนมัติ **หากระบบไม่ทำการ Redirect โดยอัตโนมัติให้ทำการอัพเดตได้โดยพิมพ์ไปที่ http://yoursite.domain/update.php ได้ด้วยตนเอง
+* 1.เพื่ออัพเดตระบบให้ท่านดาวน์โหลดไฟล์เวอร์ชั่นล่าสุดได้ที่ [ดาวโหลดไฟล์เวอร์ชั่นล่าสุด](https://github.com/aotlunla/BitfinexLendingBot-TH/archive/master.zip).
+* 2.ทำการอัพเดตโหลดไฟล์ทั้งหมดไปที่ directory ของท่านโดยเขียนไฟล์ทับทั้งหมด
+* 3.ให้ทำการอัพโหลดไฟล์ config.php ที่ Backup ไว้เขียนทับไฟล์ที่อัพเดตใหม่
+* 4.เมื่อเข้าสู่หน้าเว็บไซต์ระบบจะเรียกท่านไปที่  http://yoursite.domain/update.php โดยอัตโนมัติ **หากระบบไม่ทำการ Redirect โดยอัตโนมัติให้ทำการอัพเดตได้โดยพิมพ์ไปที่ http://yoursite.domain/update.php ได้ด้วยตนเอง
 
 
 
