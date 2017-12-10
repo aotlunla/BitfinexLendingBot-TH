@@ -41,6 +41,7 @@
 ## โดเนท
 เพื่อให้เราพัฒนาระบบนี้อย่างต่อเนื่องท่านสามารถโดเนทมาได้ผ่านทาง 
    * Bitcoin: 3Lng1vuLUVfykYdhCHnLEU133tTQuSqo41
+   
    ![Donate](https://i.imgur.com/vPb8zYF.png)
    
    * True Wallet: 098-557-5045
