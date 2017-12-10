@@ -1,57 +1,51 @@
-This is a PHP based Margin Lending Management Bot for the Bitfinex [API](https://bitfinex.com/pages/api).
+ระบบพื้นฐานได้รับการ Fork และพัฒนามาจาก:https://github.com/HFenter/MarginBot
+ใช้ระบบ PHP เพื่อรัน Margin Lending Management Bot สำหรับ Bitfinex โดยใช้ระบบ API (https://bitfinex.com/pages/api)
 
-## Details
-This bot is designed to manage 1 or more bitfinex accounts, doing its best to keep any money in the "depost" wallet lent out at the highest rate possible while avoiding long periods of pending loans (as often happens when using the Flash Return Rate, or some other arbitrary rate).  There are numerous options and setting to tailor the bot to your requirements.
-
-## Read More
-You can find lots more info and discussion right here: [Bitcointalk.org](https://bitcointalk.org/index.php?topic=865250.0)
-*Also, for anyone coming from there, take this as proof that HowardF = HowardF3 = Me = MarginBot Developer*
+## เนื้อหา
+ระบบบอท Lending นี้สร้างขึ้นมาเพื่อเป็นระบบจัดการบัญชีสำหรับ bitfinex ซึ้งพัฒนาขึ้นมาให้สามารถทำกำไรจากการ Lending ให้ได้มากที่สุดและรวดเร็วที่สุด.
 
 
-### Install
 
-[Download the most current version](https://github.com/HFenter/MarginBot/archive/master.zip), unzip to a folder on your server, then browse to that folder.  An install script will run you through the rest of the process.
+### การติดตั้ง
 
-
-**Note: *If you get the following error during install:***
-
-	PHP Parse error:  syntax error, unexpected ''America/Los_Angeles\\');' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) in /var/www/html/web/install.php on line 92
-
-*you most likely have your PHP configured without short_open_tag = on.  Make sure to set*
-
-	short_open_tag = on
-
-### Update from an older Version
-
-**Important**  - Make sure to backup your existing inc/config.php file **FIRST**
-
-To update, **make a backup of your inc/config.php file**, then [download the most current version](https://github.com/HFenter/MarginBot/archive/master.zip).  Unzip the files and overwrite your existing install.  
-
-Then overwrite the default config.php file with your backed up version.  Visit the site, and you'll be redirected to an update system.  If you are not correctly redirected, just visit /MarginBot/update.php
+1.[ดาวโหลดไฟล์เวอร์ชั่นล่าสุด](https://github.com/aotlunla/BitfinexLendingBot-TH/archive/master.zip)
+2.อัพโหลดและ unzip ไฟล์ที่ดาวน์โหลดไปที่เซิฟเวอร์หรือโฮสติ้งของคุณในหน้า Directory ที่ต้องการ (แนะนำให้ใช้ root directory ของโฮสติ้ง) (PHP 5.6 Recommend)
+3.เมื่อเข้าสู่เว็บไซต์ระบบจำทำการ redirect ไปที่ "http://yoursite.domain/install.php" จากนั้นให้ทำการติ้ดตั้งตามขั้นตอน
 
 
-## Requirements
 
-A live webserver running
-* PHP 5.1+
-* MySQL
-* Access to add a cronjob
-* A Bitfinex Account with API Access [(Set Up Here)](https://www.bitfinex.com/account/api)
-* At least $50 in your Bitfinex "Deposit" wallet.  Preferably $100 or more. ( *Note: This is a bitfinex requirement, not a bot requirement.  Bitfinex doesn't allow Margin Loans of less than $50.* ) 
+### วิธีการอัพเดตระบบ เมื่อมีการอัพเดตเวอร์ชั่นใหม่
 
-If you don't have a bitfinex account, please consider using my [affiliate code](https://www.bitfinex.com/?refcode=vsAnxuo5bM) when signing up.  By doing so, you'll save 10% on all fees for the first month, and it will help support further development of this code.
+**สำคัญ**  - ให้ทำการ Backup ไฟล์ inc/config.php ก่อนทุกครั้งก่อนอัพเดต!!
 
-[https://www.bitfinex.com/?refcode=vsAnxuo5bM](https://www.bitfinex.com/?refcode=vsAnxuo5bM).
+1.เพื่ออัพเดตระบบให้ท่านดาวน์โหลดไฟล์เวอร์ชั่นล่าสุดได้ที่ [ดาวโหลดไฟล์เวอร์ชั่นล่าสุด](https://github.com/aotlunla/BitfinexLendingBot-TH/archive/master.zip).
+2.ทำการอัพเดตโหลดไฟล์ทั้งหมดไปที่ directory ของท่านโดยเขียนไฟล์ทับทั้งหมด
+3.ให้ทำการอัพโหลดไฟล์ config.php ที่ Backup ไว้เขียนทับไฟล์ที่อัพเดตใหม่
+4.เมื่อเข้าสู่หน้าเว็บไซต์ระบบจะเรียกท่านไปที่  http://yoursite.domain/update.php โดยอัตโนมัติ **หากระบบไม่ทำการ Redirect โดยอัตโนมัติให้ทำการอัพเดตได้โดยพิมพ์ไปที่ http://yoursite.domain/update.php ได้ด้วยตนเอง
 
-## Project Development Thread on Bitointalk
 
-[MarginBot - A Bitfinex Margin Lending Management Bot](https://bitcointalk.org/index.php?topic=865250.0)
 
-## Donations
-Developing this software, and testing the various strategies for lending that led to its development have taken significant time and effort.  If you find this software useful, please send a small donation our way.  All donations support the continued development of this software, and help to cover my distribution and support costs.
+## ความต้องการของระบบ
 
-You can send donations to:
+* เว็บโฮสติ้งหรือเว็บเซิฟเวอร์ที่สามารถใช้งานได้ (ท่านสามารถติดตั้งระบบไปที่ subdomain หรือ sub folder ที่ต้องการได้)
+* ระบบ PHP 5.1 - 5.6
+* ระบบ MySQL
+* ระบบหรือโอสติ้งที่สามารถเพิ่มหรือแก้ไข cronjob ได้
+* บัญชี [ฺBitfinex](https://www.bitfinex.com/signup) และ [(API Access)](https://www.bitfinex.com/account/api)
+* เงินในบัญชี Bitfiniex ขั้นต่ำ $50 (เป็นขั้นต่ำของการทำ Margin บน Bitfinex หากต่ำกว่านี้ระบบจะไม่สามารถทำ Margin ได้). **จำนวนเงินขั้นต่ำที่แนะนคือ $100.
 
-Bitcoin: 1A3y1xDXtyZySmPZySbpz7PPog4Vsyqig1
+**หากท่านยังไม่มีบัญชี Bitfinex สามารถสมัครได้โดยคลิ๊กที่ >>> [สมัครสมาชิก Bitfinex](https://www.bitfinex.com/signup) <<<
 
-![Donate](http://therovegroup.com/MarginBotDonations.png)
+
+
+## โดเนท
+เพื่อให้เราพัฒนาระบบนี้อย่างต่อเนื่องท่านสามารถโดเนทมาได้ผ่านทาง 
+   * Bitcoin: 3Lng1vuLUVfykYdhCHnLEU133tTQuSqo41
+   ![Donate](https://i.imgur.com/vPb8zYF.png)
+   
+   * True Wallet: 098-557-5045
+
+
+
+
+
