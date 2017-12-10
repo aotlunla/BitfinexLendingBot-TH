@@ -1,9 +1,9 @@
 <?
 // App Version and Support Info
-$config['app_support_url'] = 'http://therovegroup.com/MBot/';
-$config['app_support_email'] = 'marginbot@therovegroup.com';
-$config['app_name'] = 'MarginBot';
+$config['app_support_url'] = 'https://github.com/aotlunla/BitfinexLendingBot-TH/';
+$config['app_support_email'] = 'nuttakit.kaewjinda@gmail.com';
+$config['app_name'] = 'Bitfinex Margin Bot [TH]';
 $config['app_version'] = '0.1';
-$config['app_version_minor'] = '08a';
+$config['app_version_minor'] = '0';
 
 ?>
